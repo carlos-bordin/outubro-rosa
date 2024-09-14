@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="author" content="Carlos Eduardo Bordin de Paula" />
+	<meta name="description" content="Campanha de prevenção do suicídio" />
+	<meta name="application-name" content="CEDUP" />
+	<title>CEDUP - Setembro Amarelo</title>
+
+	<link rel="shortcut icon" href="assets/img/girassol.png" type="image/x-icon" />
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+		@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap');
+
+		*,
+		*::before,
+		*::after {
+			/* outline: 1px red dotted; */
+			font-family: "Montserrat", sans-serif;
+			font-weight: 400;
+			font-style: normal;
+			overflow: hidden;
+			cursor: default;
+
+			-webkit-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+
+		main {
+			width: 100vw;
+			height: 100vh;
+
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1021%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(250%2c 229%2c 128%2c 1)'%3e%3c/rect%3e%3cpath d='M1022.57 487.02 a114.48 114.48 0 1 0 228.96 0 a114.48 114.48 0 1 0 -228.96 0z' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M8.17 72.21 a142.34 142.34 0 1 0 284.68 0 a142.34 142.34 0 1 0 -284.68 0z' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M518.96%2c360.118C566.262%2c360.814%2c609.361%2c331.214%2c630.625%2c288.955C650.056%2c250.339%2c636.603%2c206.48%2c615.154%2c168.947C593.489%2c131.036%2c562.62%2c94.193%2c518.96%2c93.553C474.487%2c92.901%2c439.25%2c127.115%2c417.752%2c166.053C397.066%2c203.521%2c393.056%2c247.801%2c412.847%2c285.749C434.254%2c326.796%2c472.671%2c359.437%2c518.96%2c360.118' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M284.321%2c266.799C329.396%2c264.839%2c351.048%2c216.469%2c373.393%2c177.273C395.409%2c138.654%2c424.147%2c96.37%2c404.098%2c56.694C382.814%2c14.574%2c331.511%2c0.623%2c284.321%2c1.002C237.898%2c1.375%2c190.547%2c18.104%2c167.834%2c58.594C145.512%2c98.387%2c158.465%2c145.831%2c180.742%2c185.649C203.695%2c226.675%2c237.355%2c268.841%2c284.321%2c266.799' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1338.2 379.5 a99.09 99.09 0 1 0 198.18 0 a99.09 99.09 0 1 0 -198.18 0z' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M638.476%2c264.649C679.361%2c263.238%2c704.409%2c224.69%2c724.468%2c189.037C743.99%2c154.339%2c762.259%2c113.89%2c742.856%2c79.125C723.122%2c43.767%2c678.963%2c35.626%2c638.476%2c34.965C596.431%2c34.278%2c549.767%2c39.627%2c528.017%2c75.616C505.751%2c112.46%2c519.831%2c158.18%2c541.55%2c195.349C563.027%2c232.103%2c595.932%2c266.117%2c638.476%2c264.649' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M602.986%2c427.31C619.722%2c426.592%2c634.211%2c416.803%2c642.676%2c402.348C651.242%2c387.721%2c654.082%2c369.503%2c645.346%2c354.977C636.826%2c340.81%2c619.515%2c336.658%2c602.986%2c336.355C585.756%2c336.04%2c567.357%2c339%2c557.853%2c353.376C547.478%2c369.07%2c547.125%2c389.969%2c556.927%2c406.026C566.372%2c421.498%2c584.876%2c428.087%2c602.986%2c427.31' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M349.07 301.79 a138.29 138.29 0 1 0 276.58 0 a138.29 138.29 0 1 0 -276.58 0z' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M702.857%2c451.131C737.784%2c453.536%2c772.486%2c437.621%2c790.716%2c407.732C809.67%2c376.655%2c810.443%2c336.912%2c791.469%2c305.847C773.211%2c275.954%2c737.795%2c261.374%2c702.857%2c263.886C671.793%2c266.119%2c648.232%2c289.543%2c633.871%2c317.178C620.733%2c342.458%2c620.676%2c371.595%2c633.72%2c396.923C648.091%2c424.827%2c671.544%2c448.975%2c702.857%2c451.131' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1203.89 409.52 a181.23 181.23 0 1 0 362.46 0 a181.23 181.23 0 1 0 -362.46 0z' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M487.457%2c474.202C511.521%2c476.091%2c537.175%2c469.395%2c550.163%2c449.049C564.009%2c427.361%2c563.746%2c398.452%2c549.49%2c377.031C536.448%2c357.435%2c510.993%2c355.179%2c487.457%2c354.833C463.035%2c354.474%2c434.077%2c353.827%2c422.183%2c375.16C410.431%2c396.239%2c426.48%2c420.232%2c439.761%2c440.383C451.256%2c457.825%2c466.632%2c472.567%2c487.457%2c474.202' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M815.83 527.1 a135.05 135.05 0 1 0 270.1 0 a135.05 135.05 0 1 0 -270.1 0z' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M906.68 535.51 a125.34 125.34 0 1 0 250.68 0 a125.34 125.34 0 1 0 -250.68 0z' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M896.906%2c397.525C920.289%2c396.81%2c942.704%2c385.16%2c953.348%2c364.328C963.222%2c345.001%2c955.542%2c322.947%2c944.579%2c304.217C933.763%2c285.739%2c918.278%2c269.196%2c896.906%2c267.899C873.366%2c266.47%2c850.559%2c277.77%2c838.03%2c297.75C824.682%2c319.037%2c821.384%2c346.332%2c834.153%2c367.972C846.747%2c389.314%2c872.137%2c398.282%2c896.906%2c397.525' fill='rgba(255%2c 255%2c 255%2c 0.13)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1021'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+		}
+
+		.fonte-slogan {
+			font-family: "Kalam", cursive;
+			font-weight: 400;
+			font-style: normal;
+
+			font-size: calc(1.5rem + 2vw + 1vh);
+			text-align: justify;
+			max-width: 90vw;
+			min-width: 80vw;
+		}
+	</style>
+</head>
+
+<body class="bg-body">
+	<main class="position-relative d-flex">
+		<img src="assets/img/blob.png" class="imagem position-absolute translate-middle top-100 start-100 z-0"
+			style="height: calc(55% + 32vw);">
+		<img src="assets/img/blob.png" class="imagem position-absolute translate-middle top-0 start-0 z-0"
+			style="height: calc(25% + 24vw);">
+		<img src="assets/img/girassol2.png" class="imagem position-absolute translate-middle top-0 start-100 z-0"
+			style="height: calc(35% + 30vw);">
+		<img src="assets/img/ribbon.png" class="imagem position-absolute bottom-0 start-0 z-0 p-4"
+			style="height: calc(12% + 5vw); filter: drop-shadow(0 0 0.25rem white);">
+		<div class="fonte-slogan z-3 position-absolute translate-middle top-50 start-50 text-black my-0 rounded-3"
+			id="texto-frase">
+			Você não está sozinho.
+		</div>
+	</main>
+
+	<script>
+		const texto = document.getElementById("texto-frase");
+		const searchParams = new URLSearchParams(window.location.search);
+		if (searchParams.has('frase')) {
+			texto.innerText = String(searchParams.get('frase'));
+		}
+
+	</script>
+</body>
+
+</html>
