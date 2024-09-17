@@ -68,18 +68,55 @@
 		<img src="assets/img/ribbon.png" class="imagem position-absolute bottom-0 start-0 z-0 p-4"
 			style="height: calc(12% + 5vw); filter: drop-shadow(0 0 0.25rem white);">
 		<div class="fonte-slogan z-3 position-absolute translate-middle top-50 start-50 text-black my-0 rounded-3"
-			id="texto-frase">
+			id="id-frase">
 			Você não está sozinho.
 		</div>
 	</main>
 
 	<script>
-		const texto = document.getElementById("texto-frase");
+		const frases = [
+			"O sorriso que você compartilha hoje será o raio de sol que ilumina o amanhecer de um novo dia.",
+			"Todos os dias são uma oportunidade para iluminar o caminho e superar os obstáculos da vida com coragem e esperança.",
+			"Seus pulsos não são papel, então não os corte.",
+			"Não tenha medo de pedir ajuda.",
+			"Cada vida importa.",
+			"Tudo passa e essa dor também vai passar.",
+			"Neste Setembro Amarelo, ilumine sua mente com esperança e deixe a coragem florescer em cada novo amanhecer.",
+			"A vida é como o sol em setembro: mesmo nos dias nublados, sua luz interna pode sempre brilhar mais forte.",
+			"Você é mais forte do que imagina, e cada dia é uma nova chance de recomeçar.",
+			"A única maneira de fazer um ótimo trabalho é amar o que você faz. – Steve Jobs",
+			"Não importa quão devagar você vá, desde que você não pare. – Confúcio",
+			"O sucesso é a soma de pequenos esforços repetidos dia após dia. – Robert Collier",
+			"Acredite em si mesmo e todo o resto virá naturalmente. – Elissa Landi",
+			"O futuro pertence àqueles que acreditam na beleza de seus sonhos. – Eleanor Roosevelt",
+			"Desafios são o que fazem a vida interessante; superá-los é o que faz a vida significativa. – Joshua J. Marine",
+			"Você é capaz de muito mais do que imagina.",
+			"Você é importante. Não hesite em buscar ajuda quando precisar.",
+			"Peça ajuda quando precisar. Você não está sozinho.",
+			"Se estiver cansada(o), aprenda a descansar, não a desistir.",
+			"A persistência é o caminho para o sucesso.",
+			"Se você está se sentindo sobrecarregado, não hesite em buscar ajuda.",
+			"Sua vida é preciosa e há pessoas dispostas a ouvir e apoiar você.",
+			"Sua vida é preciosa. Fale com alguém hoje.",
+			"Você não está sozinho. Procure ajuda.",
+			"A tristeza passa. O apoio é essencial.",
+			"Cuidar da mente é tão importante quanto cuidar do corpo.",
+			"Abra o coração e busque apoio. A vida é linda.",
+			"Compartilhar seu peso pode torná-lo mais leve.",
+			"Estamos aqui para ouvir e apoiar. Não hesite em falar.",
+			"A esperança é a luz que ilumina os dias mais sombrios.",
+			"O sucesso é a soma de pequenos esforços repetidos todos os dias.",
+			"Acredite no seu potencial, mesmo quando ninguém mais acreditar."
+		];
+
+		const texto = document.getElementById("id-frase");
 		const searchParams = new URLSearchParams(window.location.search);
 		if (searchParams.has('frase')) {
-			texto.innerText = String(searchParams.get('frase'));
+			const index = parseInt(searchParams.get('frase'), 10);
+			if (!isNaN(index) && index >= 0 && index < frases.length) {
+				texto.innerText = frases[index];
+			}
 		}
-
 	</script>
 </body>
 
